@@ -1,47 +1,9 @@
-permalink: /:year/:month/:day/:title.html
-paginate: 10
-markdown: redcarpet
+baseurl: "/resumecards" # The subpath of your site. Use "" if you're hosting a blog at the root level.
+url: "http://localhost:4000/resumecards/" # the base hostname & protocol for your site
 
-# 作者信息
-author: 
-  name: Dong Liang
-  email: dongg.liang@gmail.com
-  link: http://ddbullfrog.github.io
-  weibo: http://
-  github: http://ddbullfrog.github.io
-  music: http://
-  linkedin: https://
-
-# 站点信息
-title: 牛蛙的博客
-description: My personal blog
-url: http://ddbullfrog.github.io
-rss_url: /pages/atom.xml
-
-# gavatar头像及Favicon
-gavatar: /public/img/avatar.JPG
-favicon: /public/img/avatar.JPG
-
-# google analytics 设置
-#ga:
-  #id: UA-54262064-1 
-  #url: painterlin.com
-
-# disqus 设置
-#disqus:
-  #shortname: painterlin
-
-# 主题设置，自动激活某个标签
-active: 技术
-
-## 首页除了最新文章外显示分类
-#cates:
-#  - Optimization
-#  - LaTeX
-
-# 中文本地化
-locals:
-  tags: 标签
-  about: 关于
-  newest: 最新文章
-  archive: 归档
+exclude:
+  - "README.md"
+  - "CHANGELOG.md"
+  - "CNAME"
+  - "Gemfile"
+  - "Gemfile.lock"
