@@ -1,37 +1,55 @@
 ---
 layout: default
 ---
+<div class="header">
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="col-sm-4">
+                <img src="public/img/avatar.jpg" title="Avatar" alt="My Avatar">
+                <h4>Dong Liang</h4>
+                <p>Java Developer</p>
+                <p class="muted">Auckland, New Zealand</p>
+                <div class="clearfix"></div>
+            </div>
+            <div class="col-sm-4 visible-md-block visible-lg-block visible-sm-block">
+                <ul>
+                    <li><i class="fa fa-envelope-o"></i> ddbullfrog@gmail.com</li>
+					<li><i class="fa fa-phone"></i> +64 (021) 000-00</li>
+                    <li><i class="fa fa-linkedin-square"></i> <a href="#" target="_blank"> LinkedIn</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-4 visible-md-block visible-lg-block">
+                <a href="#" class="btn btn-dark"><i class="icon-file icon-white"></i> Download.pdf</a>
+            </div>
+        </div>
+    </div>
+</div>
 
+<!-- Starting main block -->
 <div class="container-fluid">
     <div class="row-fluid">
         <div class="col-md-8">
             <h3 class="title with-icon"><span class="glyphicon glyphicon-plane cat-title"></span>Work History</h3>
             <ul class="timeline">
-			{% for job in site.posts %}
                 <li class="timeline-inverted">
-					{% if job.started %}
-						<div class="timeline-badge info">{{ job.started }}</div>
-					{% endif %}
+                    <div class="timeline-badge info">2014</div>
                     <div class="timeline-panel grid-block">
                         <div class="timeline-heading">
-							{% if job.company %}
-								<h4 class="timeline-title">{{ job.company }}</h4>
-							{% endif %}
-							{% if job.duration %}
-								{% if job.title %}
-								<p>
-									<small class="text-muted"><i class="fa fa-calendar"></i>{{ job.duration }} {{ job.title }}
-									</small>
-								</p>
-								{% endif %}
-							{% endif %}
+                            <h4 class="timeline-title">Agfa HealthCare</h4>
+
+                            <p>
+                                <small class="text-muted"><i class="fa fa-calendar"></i> (2014 - Present) Java Developer
+                                </small>
+                            </p>
                         </div>
-						
-						{% if job.content %}
-							<div class="timeline-body">
-								<p>{{ job.content }}</p>
-							</div>
-						{% endif %}
+                        <div class="timeline-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, non, dolorem,
+                                cumque distinctio magni quam expedita velit laborum sunt amet facere tempora ut fuga
+                                aliquam ad asperiores voluptatem dolorum! Quasi. Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Repellendus, non, dolorem, cumque distinctio magni quam expedita velit
+                                laborum sunt amet facere tempora ut fuga aliquam ad asperiores voluptatem dolorum!
+                                Quasi.</p>
+                        </div>
                     </div>
                 </li>
                 <li class="timeline-inverted">
@@ -181,23 +199,13 @@ layout: default
 </div>
 </div>
 
-
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+<!-- Starting footer -->
+<div class="footer">
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="col-md-12">
+                Copyright &copy; 2015 Dong Liang - All rights reserved.
+            </div>
+        </div>
+    </div>
 </div>
